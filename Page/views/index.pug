@@ -1,0 +1,60 @@
+extends layout
+
+block content
+  #titre
+    | Memory O'clock
+
+  #jeu
+    table#memory
+      tr
+        td#cell1(onclick='userClick(this.id)')
+        td#cell2(onclick='userClick(this.id)')
+        td#cell3(onclick='userClick(this.id)')
+        td#cell4(onclick='userClick(this.id)')
+      tr
+        td#cell5(onclick='userClick(this.id)')
+        td#cell6(onclick='userClick(this.id)')
+        td#cell7(onclick='userClick(this.id)')
+        td#cell8(onclick='userClick(this.id)')
+      tr
+        td#cell9(onclick='userClick(this.id)')
+        td#cell10(onclick='userClick(this.id)')
+        td#cell11(onclick='userClick(this.id)')
+        td#cell12(onclick='userClick(this.id)')
+
+  #resultat
+    #gagne
+      | C'est gagn&eacute;!
+    #perdu
+      | C'est perdu!
+    #score
+      | Score: #{title}
+    .ligneRes
+      .classement
+        | Meilleur temps:&nbsp;
+      #temps1.temps
+        | #{meilleurTemps}
+      .sec
+        | &nbsp;secondes
+    .ligneRes
+      .classement
+        | Deuxi&egrave;me temps:&nbsp;
+      #temps2.temps
+        | #{deuxiemeTemps}
+      .sec
+        | &nbsp;secondes
+    .ligneRes
+      .classement
+        | Troisi&egrave;me temps:&nbsp;
+      #temps3.temps
+        | #{troisiemeTemps}
+      .sec
+        | &nbsp;secondes
+    #fond
+      #temps
+      #compteur
+        | 20
+    #sauvegarde
+      form(action='/', method='POST')
+        input(id='duree', type='hidden', name='duree', value=20)
+        input(id='valider', type='submit', value='Sauvegarder et rejouer')
