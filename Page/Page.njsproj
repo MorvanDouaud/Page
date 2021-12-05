@@ -29,6 +29,7 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include=".gitignore" />
     <Content Include="app.js" />
     <None Include="compilerconfig.json" />
     <Content Include="Bapteme Morvan Douaud.pdf" />
