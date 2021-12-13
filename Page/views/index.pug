@@ -7,20 +7,20 @@ block content
   #jeu
     table#memory
       tr
-        td#cell1(onclick='userClick(this.id)')
-        td#cell2(onclick='userClick(this.id)')
-        td#cell3(onclick='userClick(this.id)')
-        td#cell4(onclick='userClick(this.id)')
+        td#cell1(onclick='gestionClic.userClick(this.id)')
+        td#cell2(onclick='gestionClic.userClick(this.id)')
+        td#cell3(onclick='gestionClic.userClick(this.id)')
+        td#cell4(onclick='gestionClic.userClick(this.id)')
       tr
-        td#cell5(onclick='userClick(this.id)')
-        td#cell6(onclick='userClick(this.id)')
-        td#cell7(onclick='userClick(this.id)')
-        td#cell8(onclick='userClick(this.id)')
+        td#cell5(onclick='gestionClic.userClick(this.id)')
+        td#cell6(onclick='gestionClic.userClick(this.id)')
+        td#cell7(onclick='gestionClic.userClick(this.id)')
+        td#cell8(onclick='gestionClic.userClick(this.id)')
       tr
-        td#cell9(onclick='userClick(this.id)')
-        td#cell10(onclick='userClick(this.id)')
-        td#cell11(onclick='userClick(this.id)')
-        td#cell12(onclick='userClick(this.id)')
+        td#cell9(onclick='gestionClic.userClick(this.id)')
+        td#cell10(onclick='gestionClic.userClick(this.id)')
+        td#cell11(onclick='gestionClic.userClick(this.id)')
+        td#cell12(onclick='gestionClic.userClick(this.id)')
 
   #resultat
     #gagne
@@ -28,28 +28,11 @@ block content
     #perdu
       | C'est perdu!
     #score
-      | Score: #{title}
-    .ligneRes
-      .classement
-        | Meilleur temps:&nbsp;
-      #temps1.temps
-        | #{meilleurTemps}
-      .sec
-        | &nbsp;secondes
-    .ligneRes
-      .classement
-        | Deuxi&egrave;me temps:&nbsp;
-      #temps2.temps
-        | #{deuxiemeTemps}
-      .sec
-        | &nbsp;secondes
-    .ligneRes
-      .classement
-        | Troisi&egrave;me temps:&nbsp;
-      #temps3.temps
-        | #{troisiemeTemps}
-      .sec
-        | &nbsp;secondes
+      | Score:
+    #ligneRes
+      | Meilleur temps: #{meilleurTemps} secondes<br/>
+      | Deuxi&egrave;me temps: #{deuxiemeTemps} secondes<br/>
+      | Troisi&egrave;me temps: #{troisiemeTemps} secondes
     #fond
       #temps
       #compteur

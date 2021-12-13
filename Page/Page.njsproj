@@ -37,7 +37,7 @@
       <SubType>Content</SubType>
       <DependentUpon>compilerconfig.json</DependentUpon>
     </Content>
-    <Content Include="public\data\memory.json" />
+    <Content Include="public\favicon.ico" />
     <Content Include="public\images\1.png" />
     <Content Include="public\images\10.png" />
     <Content Include="public\images\11.png" />
@@ -56,15 +56,22 @@
     <Content Include="public\images\7.png" />
     <Content Include="public\images\8.png" />
     <Content Include="public\images\9.png" />
+    <Content Include="public\javascripts\Click.mjs">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="public\javascripts\Image.mjs">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="public\javascripts\memory.js">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="public\javascripts\Time.mjs">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="public\stylesheets\main.min.css" />
-    <Content Include="public\stylesheets\memory.css" />
     <Content Include="public\stylesheets\memory.less">
       <SubType>Code</SubType>
     </Content>
-    <Content Include="public\stylesheets\memory.min.css" />
     <Content Include="routes\index.js" />
     <Content Include="routes\users.js" />
     <Content Include="package.json" />
@@ -78,7 +85,6 @@
     <Folder Include="public\" />
     <Folder Include="public\images\" />
     <Folder Include="public\javascripts\" />
-    <Folder Include="public\data\" />
     <Folder Include="public\stylesheets\" />
     <Folder Include="routes\" />
     <Folder Include="views\" />
